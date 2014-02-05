@@ -1,0 +1,100 @@
+.navbar{
+  background-image:url(https://www.moveline.com/images/cardboard.jpg);
+  .nav {
+    li.active {
+      font-weight: 900;
+    }
+  }
+
+  .navbar-header {
+    position: relative;
+    z-index: 10;
+    .navbar-brand {
+      position: inherit;
+      img {
+        position: relative;
+        top: .45em;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    position: relative;
+    top: .9em;
+  }
+
+  .login-button {
+    background-color: @brand-primary;
+    color: white;
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    padding: .7em 0;
+    position: relative;
+    top: 1.45em;
+    .border-top-radius(5px);
+    .ss-user {
+      color: #2d2a26;
+      position: relative;
+      top: .15em;
+    }
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  #account-menu-row {
+    position: absolute;
+    width: 100%;
+    top: 4.22em;
+    overflow: hidden;
+    height: 0;
+    &.expanded {
+      overflow: visible;
+    }
+    .account-menu {
+      list-style: none;
+      background-color: @link-hover-color;
+      .border-bottom-radius(5px);
+      padding: 1em 0;
+      li {
+        a {
+          display: block;
+          color: white;
+          padding: .66em 1.3em;
+          &:hover {
+            background-color: darken(@link-hover-color, 10%);
+            text-decoration: none;
+          }
+        }
+      }
+    }    
+  }
+
+  #responsive-nav-button {
+    position: relative;
+    top: .5em;
+  }
+  .content-navigation .nav-item {
+    border-right: 1px solid @body-bg;
+  }
+  .nav-sm, .nav-xs {
+    background-color: @text-color;
+    font-size: .9em;
+    .nav-item {
+      border-bottom: 1px solid @body-bg;
+      a {
+        display:block;
+        color: white;
+        padding: .66em 1em;
+        i {
+          position: relative;
+          top: .05em;
+          margin-right: .2em;
+        }
+      }
+    }
+  }
+
+}

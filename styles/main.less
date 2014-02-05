@@ -1,0 +1,136 @@
+@import 'bootstrap/bootstrap.less';
+@import 'moveline-bootstrap-variables.less';
+@import 'header.less';
+@import 'footer.less';
+
+/*Global styles*/
+
+.hover {
+  cursor: pointer;
+}
+
+.vertical-rule {
+  margin: auto;
+  border-right: 2px solid @hr-border;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+hr {
+  border-top-width: 2px;
+}
+
+/* Loading */
+
+#loading{
+  margin: 4em 0 5em;
+}
+
+/* Form validation */
+
+.ng-invalid-required {
+  border-color: @brand-warning;
+  &.ng-pristine {
+    border-color: white;
+    &.warned {
+      border-color: @brand-warning;
+    }
+  }
+  &+span.warned {
+    color: @brand-warning;
+  }
+}
+
+/*Forms and buttons*/
+
+.form-control {
+  .box-shadow(none);
+  &::-moz-placeholder {
+    font-style:italic;
+  }
+  &::-webkit-input-placeholder {
+    font-style:italic;
+  }
+}
+.form-label {
+  width: 100%;
+  font-weight: 300;
+  .form-control {
+    margin-top: .33em;
+  }
+}
+
+input[type=password],
+input[type=email],
+input[type=text],
+input[type=url] {
+  height: 2.75em;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+
+
+/*Typography*/
+
+h1 {
+  border-bottom: 2px solid #dbceba;
+  margin-bottom: .4em;
+  padding-bottom: .3em;
+}
+
+/* Symbolset Icons */
+
+i[class^="ss-"] {
+  margin-right: .66em;
+  position: relative;
+  top: .1em;
+  /*color: @charcoal;*/
+}
+
+i[class^="ss-right"] {
+    margin-right: 0;
+    margin-left: .66em;
+}
+
+
+
+/* Panels */
+
+.panel {
+  .box-shadow(inset 0 0 0 transparent);
+  .panel-body {
+    border-bottom: 1px solid @body-bg;
+    &:last-child {
+      border-bottom: none;
+    }
+  }  
+}

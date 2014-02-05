@@ -1,16 +1,110 @@
 <html>
 <head>
+
+  <link rel="stylesheet/less" type="text/css" href="/styles/main.less" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.6.1/less.min.js"></script>
   
   <title>{{ page.title }}</title>
 </head>
 <body>
 
-  <div class="container">
-    <p>above content yeah</p>
-    {{content}}
-    <p>below content</p>
-  </div>
+    <!-- Header region -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12">
+            <div class="row">
+
+              <div class="col-md-9 col-sm-9 col-xs-6">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="https://www.moveline.com"><img src="//d4axzgei368xe.cloudfront.net/images/moveline-logo.png" alt="Moveline"></a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="//www.moveline.com/how-it-works">How It Works</a></li>
+                    <li><a href="//www.moveline.com/moving-services">Services</a></li>
+                    <li><a href="//www.moveline.com/blog">Blog</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+<div class="container">
+  <p>above content yeah</p>
+  {{content}}
+  <p>below content</p>
+</div>
+
+
+    <!-- Footer region -->
+    <div class="footer-wrapper">
+      <!-- ngInclude:  -->
+      <footer class="container footer ng-scope" ng-include="" src="'views/regions/footer.html'"><hr class="ng-scope">
+        <div class="row ng-scope">
+          <div class="nav-block col-md-3 col-sm-3">
+            <h6 class="nav-header">© 2014 Moveline</h6>
+            <nav class="nav-menu">
+              <li class="hidden-phone"><a href="/terms">Terms of Service</a></li>
+              <li class="hidden-phone"><a href="/privacy">Privacy</a></li>
+              <li class="hidden-phone"><a href="/sitemap">Sitemap</a></li>
+            </nav>
+          </div>
+          <div class="nav-block col-md-3 col-sm-3">
+            <h6 class="nav-header">Company</h6>
+            <nav class="nav-menu">
+              <li><a href="/company">About Moveline</a></li>
+              <li><a href="/careers">Careers</a></li>
+              <li><a href="http://product.moveline.com">Product Team Blog</a></li>
+              <li><a href="/broker-status">Our Credentials</a></li>
+            </nav>
+          </div>
+          <div class="nav-block col-md-3 col-sm-3">
+            <h6 class="nav-header">Resources</h6>
+            <nav class="nav-menu">
+              <li><a href="/how-it-works">How It Works</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/moveline-for-organizations">For Companies</a></li>
+              <li><a href="https://www.protectyourmove.gov/consumer/awareness/rights/rights.htm">Customer Rights</a></li>
+              <li><a href="https://www.protectyourmove.gov/documents/ReadyToMove-2006-april.pdf">Interstate Moving Tips</a></li>
+            </nav>
+          </div>
+
+          <div class="nav-block col-md-3 col-sm-3">
+            <h6 class="nav-header">Get In Touch</h6>
+            <nav class="nav-menu">
+              <li><a href="http://www.facebook.com/moveline">Facebook</a></li>
+              <li><a href="https://twitter.com/Moveline">Twitter</a></li>
+              <li><a href="mailto:support@moveline.com">support@moveline.com</a></li>
+              <li>(800) 579-0635</li>
+            </nav>
+          </div>
+        </div>
+
+        <div class="row ng-scope">
+          <div class="col-md-12 col-sm-12">
+            <p class="fmcsa-disclaimer">228 S. 4th Street, Suite 200, Las Vegas, NV 89101<img src="assets/images/fmcsa-logo.png" id="fmcsa-logo" alt="FMCSA logo">Moveline is a Household Goods Transportation Broker • MC #722857 • US DOT 2247359</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
